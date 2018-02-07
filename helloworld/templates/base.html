@@ -35,7 +35,7 @@
 
   <body>
 
-    {% extends "head.html" %}
+    {% block header %}{% endblock %}
 
 	<!-- +++++ Posts Lists +++++ -->
 	<!-- +++++ First Post +++++ -->
@@ -117,7 +117,7 @@
 	
 	
 	
-	<div id="includedFooter"></div>
+	{% block footer %}{% endblock %}
 	
 
     <!-- Bootstrap core JavaScript
