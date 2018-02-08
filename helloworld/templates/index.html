@@ -1,74 +1,87 @@
 {% extends "base.html" %}
 
-{% block header %}
-<div class="navbar navbar-inverse navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <img class="img-brand" src="static/helloworld/img/walrus_edit.png" width="50px" height="50px">
-      <a class="navbar-brand" href="index.html">Data Walrus</a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="work.html">Work</a></li> -->
-        <li><a href="index.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
-{% endblock %}
+{% block body %}
+	<!-- +++++ Posts Lists +++++ -->
+	<!-- +++++ First Post +++++ -->
+	<div id="white">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p><img src="/static/helloworld/img/user.png" width="5%" height="5%"> <ba>Data Walrus</ba></p>
+					<p><bd>February 1, 2018</bd></p>
+					<a href="groundhog_day.html">
+						<h4>A shadow of a doubt</h4>
+						<p><img class="img-responsive" src="/static/helloworld/img/groundhog_preview.png" alt=""></p>
+					</a>
+					<p>It's that time of the year where many wait for a groundhog to pop out and predict the weather for the next six weeks (I wonder if meteorologists get jealous of all his attention?).</p>
+					<p><a href="groundhog_day.html">Continue Reading...</a></p>
+				</div>
 
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /white -->
 
-{% block footer %}
-<div id="footer">
-	<div class="container">
-		<div class="row">
-<!-- 			<div class="col-lg-4">
-				<h4>My Bunker</h4>
-				<p>
-					Some Address 987,<br/>
-					+34 9054 5455, <br/>
-					Madrid, Spain.
-				</p>
-			</div> -->
-			
-			<div class="col-lg-4">
-				<!-- <h4>My Links</h4> -->
-				<p>
-					<!-- <a href="https://github.com/thedatawalrus/thedatawalrus.github.io">Github</a><br/>
-					<a href="https://twitter.com/data_walrus">Twitter</a><br/> -->
-					<a href="https://github.com/thedatawalrus/thedatawalrus.github.io">
-						<img src="static/helloworld/img/github-icon.png" alt="" width="40px" height="40px" hspace="3">
+	<div id="white">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p><img src="/static/helloworld/img/user.png" width="5%" height="5%"> <ba>Data Walrus</ba></p>
+					<p><bd>December 22, 2017</bd></p>
+					<a href="home_value.html">
+						<h4>House hunters</h4>
+						<p><img class="img-responsive" src="/static/helloworld/img/home_value.png" alt=""></p>
 					</a>
-					<a href="https://twitter.com/data_walrus">
-						<img src="static/helloworld/img/Twitterbird.png" alt="" width="40px" height="40px" hspace="3">
+					<p>I recently stumbled upon some great housing data from <a href = https://www.zillow.com/research/data/> zillow </a>and decided to play around with it. I was interested to see how much home values have historically changed.</p>
+					<p><a href="home_value.html">Continue Reading...</a></p>
+				</div>
+
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /white -->
+
+	<div id="white">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p><img src="/static/helloworld/img/user.png" width="5%" height="5%"> <ba>Data Walrus</ba></p>
+					<p><bd>October 24, 2017</bd></p>
+					<a href="mlb.html">
+						<h4>Take me out to the ball game</h4>
+						<p><img class="img-responsive" src="/static/helloworld/img/mlb.png" alt=""></p>
 					</a>
-					<a href="mailto:datawalrus@gmail.com">
-						<img src="static/helloworld/img/email-circle.png" alt="" width="40px" height="40px" hspace="3">
-					</a>
-					<!-- <a href="#">Facebook</a> -->
-				</p>
-			</div><!-- /col-lg-4 -->
-			<div class="col-lg-4">
-				<h4></h4>
-				<p>
-				</p>
-			</div>
-			
-			<div class="col-lg-4">
-				<h4>What is Data Walrus?</h4>
-				<p>Putting together interesting visualizations using multiple data tools!</p>
-			</div>
-		
-		</div>
+					<p>So, I’m a big baseball fan. Not a huge fan in the sense that I’ll watch it daily (anymore), but more so in the sense that I admire the strategy and complexity of the sport. Oh, and I’m a fan of all the analytics.</p>
+					<p><a href="mlb.html">Continue Reading...</a></p>
+				</div>
+
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /white -->
 	
-	</div>
-</div>
+	<!-- +++++ Second Post +++++ -->
+	<div id="white">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<p><img src="/static/helloworld/img/user.png" width="5%" height="5%"> <ba>Data Walrus</ba></p>
+					<p><bd>May 18, 2016</bd></p>
+					<a href="exoplanet_post.html">
+						<h4>I want to believe.</h4>
+						<p><img class="img-responsive" src="/static/helloworld/img/exoplanet.png" alt=""></p>
+					</a>
+					<p>I enjoy reading about early exploration. I’m fascinated by the thought of people finding untouched parts of the world. I’ve always wondered, how would it feel to know that no one has ever experienced a place that you are now experiencing?</p>
+					<p><a href="exoplanet_post.html">Continue Reading...</a></p>
+				</div>
+
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /white -->
+	
+	<!-- +++++ Third Post +++++ -->
+
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/helloworld/js/bootstrap.min.js"></script>
 {% endblock %}
