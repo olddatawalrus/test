@@ -75,16 +75,18 @@ WSGI_APPLICATION = 'ebdjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+}
 DATABASES = {
-'default': {
-'ENGINE': 'django.db.backends.mysql',
-'NAME': 'datawalrus',
-'USER': 'datawalrus',
-'PASSWORD': 'goofylou',
-'HOST': 'aa1v3e686vcy31y.cw1jqllopvdv.us-west-2.rds.amazonaws.com',
-'PORT': '3306',
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'datawalrus',
+        'USER': 'datawalrus',
+        'PASSWORD': 'goofylou',
+        'HOST': 'aa1v3e686vcy31y.cw1jqllopvdv.us-west-2.rds.amazonaws.com',
+        'PORT': '3306',
+    }
 }
-}
+
 
 # DATABASES = {
 #     'default': {
