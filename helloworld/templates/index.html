@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block body %}
+
+post_preview = datawalrus.post_preview.objects.all()
+
 {% for entry in post_preview %}
 
 	<div id="white">
