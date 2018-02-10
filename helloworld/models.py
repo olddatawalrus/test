@@ -15,14 +15,16 @@ class Post(models.Model):
     preview_text = models.CharField(max_length=255)
     
     
+#     def __unicode__(self):
+#        return ('post_preview', (),
+#             {
+#                'author_img_path': self.author_img_path,
+#                'author_name': self.author_name,
+#                'post_date': self.post_date,
+#                'post_link': self.post_link,
+#                'post_title': self.post_title,
+#                'preview_img_path': self.preview_img_path,
+#                'preview_text': self.preview_text,
+#             })
     def __unicode__(self):
-       return ('post_preview', (),
-            {
-               'author_img_path': self.author_img_path,
-               'author_name': self.author_name,
-               'post_date': self.post_date,
-               'post_link': self.post_link,
-               'post_title': self.post_title,
-               'preview_img_path': self.preview_img_path,
-               'preview_text': self.preview_text,
-            })
+       return self.post_title
