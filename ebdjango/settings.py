@@ -87,18 +87,31 @@ WSGI_APPLICATION = 'ebdjango.wsgi.application'
 #     }
 # }
 
+# if 'RDS_HOSTNAME' in os.environ:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.mysql',
+#             'NAME': os.environ['ebdb'],
+#             'USER': os.environ['datawalrus'],
+#             'PASSWORD': os.environ['goofylou'],
+#             'HOST': os.environ['aazkie078qbei0.cw1jqllopvdv.us-west-2.rds.amazonaws.com'],
+#             'PORT': os.environ['3306'],
+#         }
+#     }
+
+
 if 'RDS_HOSTNAME' in os.environ:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': os.environ['ebdb'],
-            'USER': os.environ['datawalrus'],
-            'PASSWORD': os.environ['goofylou'],
-            'HOST': os.environ['aazkie078qbei0.cw1jqllopvdv.us-west-2.rds.amazonaws.com'],
-            'PORT': os.environ['3306'],
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
         }
     }
-
+    
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
