@@ -10,4 +10,4 @@ class HomePageView(TemplateView):
    
 def post(request):
   data = Post.objects.all()
-  return TemplateResponse(request,'index.html',{ "data" : data } )
+  return TemplateResponse(request,'helloworld/index.html',{ "data" : data } )
