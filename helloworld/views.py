@@ -8,6 +8,6 @@ class HomePageView(TemplateView):
     def get(self, request, **kwargs):
         return render(request, 'index.html', context=None)
    
-def post(request):
-  data = Post.objects.all()
-  return TemplateResponse(request,'helloworld/index.html',{ "data" : data } )
+    def post(request):
+      data = Post.objects.all()
+      return TemplateResponse(request,'helloworld/index.html',{ "data" : data } )
