@@ -1,5 +1,5 @@
 from django.contrib import admin
-from helloworld import models
+from .models import Post
 
 # Register your models here.
 admin.site.register(models.Post)
