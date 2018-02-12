@@ -5,7 +5,7 @@ from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
 
 # Create your models here.
-class Post(models.Model):
+class Posts(models.Model):
     author_img_path = models.CharField(max_length=255)
     author_name = models.CharField(max_length=255)
     post_date = models.CharField(max_length=255)
