@@ -5,14 +5,14 @@ from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
 
 # Create your models here.
-class Posts(models.Model):
-    author_img_path = models.CharField(max_length=255)
-    author_name = models.CharField(max_length=255)
-    post_date = models.CharField(max_length=255)
-    post_link = models.CharField(max_length=255)
-    post_title = models.CharField(max_length=255)
-    preview_img_path = models.CharField(max_length=255)
-    preview_text = models.CharField(max_length=255)
+# class Posts(models.Model):
+#     author_img_path = models.CharField(max_length=255)
+#     author_name = models.CharField(max_length=255)
+#     post_date = models.CharField(max_length=255)
+#     post_link = models.CharField(max_length=255)
+#     post_title = models.CharField(max_length=255)
+#     preview_img_path = models.CharField(max_length=255)
+#     preview_text = models.CharField(max_length=255)
     
     
 #     def __unicode__(self):
@@ -26,5 +26,5 @@ class Posts(models.Model):
 #                'preview_img_path': self.preview_img_path,
 #                'preview_text': self.preview_text,
 #             })
-    def __unicode__(self):
-       return self.post_title
+#     def __unicode__(self):
+#        return self.post_title
